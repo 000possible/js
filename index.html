@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="QMove.js"></script>
+</head>
+<body>
+<div style="width:500px;">
+<div id="c" style="width:500px; height:30px; background:#fff; border:solid 1px #ddd;">
+    <div style=" height:30px; width:0px; border:none; background:green;">
+        <div style="height:30px;width:100px; background:red; color:#ddd;  cursor:pointer;">
+        </div>
+    </div>
+</div>
+</div>
+<script>
+
+
+
+    var o = new QMove('c',{callback:function(e){
+        console.log(e);
+    }});
+</script>
+</body>
+</html>
